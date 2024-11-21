@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { merriweather } from "../app/fonts/fonts";
+import LenisComponent from "@/utils/LenisComponent";
 
 export const metadata: Metadata = {
   title: "Blue Sanctuary",
@@ -13,13 +14,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        suppressHydrationWarning
-        className={`${merriweather.className}  antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <LenisComponent>
+      <html lang="en">
+        <body
+          suppressHydrationWarning
+          className={`${merriweather.className}  antialiased h-[200vh]`}
+        >
+          {children}
+        </body>
+      </html>
+    </LenisComponent>
   );
 }
