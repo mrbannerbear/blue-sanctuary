@@ -40,7 +40,7 @@ const Banner = () => {
             </h2>
           </div>
         </div>
-        <button className='absolute left-1/2 bottom-10 text-3xl z-[2]' ref={arrowBtn}>
+        <button className='absolute left-1/2 bottom-10 text-3xl z-[2]' ref={arrowBtn}> 
           <MdKeyboardDoubleArrowDown />
         </button>
       </div>
