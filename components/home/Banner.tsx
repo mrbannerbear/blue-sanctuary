@@ -15,7 +15,7 @@ const Banner = () => {
     const subHeading = useRef<HTMLHeadingElement>(null);
     const arrowBtn = useRef<HTMLButtonElement>(null);
     useEffect(() => {
-        const tl = gsap.timeline(
+        const tl = gsap.timeline( 
             {
                 defaults: {
                     opacity: 0, ease: "power2.out", duration: 2, y: 30
