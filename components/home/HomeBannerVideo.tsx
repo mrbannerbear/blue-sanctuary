@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeBannerVideo = () => {
   return (
-    <div className="absolute w-full h-full">
+    <div className="absolute w-full object-cover h-full">
       <video
         src="/HomeBannerVid-updated_1080.mp4"
         className="w-full h-full object-cover will-change-scroll"
