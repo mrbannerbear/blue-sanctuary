@@ -1,10 +1,12 @@
+"use client"
 import React from 'react';
+import { Element } from 'react-scroll';
 
 const AboutSection = () => {
     return (
-        <div>
-            
-        </div>
+        <Element name='about'>
+
+        </Element>
     );
 };
 

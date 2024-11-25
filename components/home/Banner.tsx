@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-scroll";
 import HomeBannerVideo from '@/components/home/HomeBannerVideo';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 
@@ -40,9 +41,11 @@ const Banner = () => {
             </h2>
           </div>
         </div>
-        <button className='absolute left-1/2 bottom-10 text-3xl z-[2]' ref={arrowBtn}> 
-          <MdKeyboardDoubleArrowDown />
-        </button>
+        <Link to='about'smooth duration={1000}>
+          <button className='absolute left-1/2 bottom-10 text-3xl z-[2]' ref={arrowBtn}> 
+            <MdKeyboardDoubleArrowDown />
+          </button>
+        </Link>
       </div>
     );
 };
