@@ -21,8 +21,8 @@ const Navbar = () => {
     tl.from(navbar.current, { y: -10, delay: 3, opacity: 0 });
   }, []);
   return (
-    <div
-      className="navbar bg-transparent fixed top-0 z-10 justify-between"
+    <header
+      className="navbar bg-transparent fixed top-0 z-10 justify-between backdrop-blur-sm py-0"
       ref={navbar}
     >
       <div className="navbar-start">
@@ -63,12 +63,12 @@ const Navbar = () => {
         <a className="btn btn-ghost text-xl">BlueSanctuary</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 font-sans">
+        <ul className="menu menu-horizontal px-1 font-sans py-0">
         {
               routesArray.map(
                 (each, i) => (
                   <li key={i}>
-                      <Link to={each.name} duration={1000} smooth>
+                      <Link to={each.name} duration={1000} smooth className="py-1">
                           {each.name}
                       </Link>
                   </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
             }
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 
