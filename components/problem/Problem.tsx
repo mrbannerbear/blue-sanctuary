@@ -72,7 +72,7 @@ const Problem = () => {
     gsap.from(container, {
       opacity: 0,
       ease: "power2.out",
-      delay: 2,
+      delay: 0.5,
       duration: 2.5,
       scrollTrigger: {
         trigger: section,
