@@ -109,7 +109,7 @@ const Problem = () => {
     <Route id="Crisis">
       {/* <FadeSection> */}
       <section
-        className="py-[15vh] overflow-hidden min-h-screen"
+        className="pt-[17vh] pb-[10vh] overflow-hidden min-h-screen"
         ref={sectionRef}
       >
         <h2 className="problemHeading text-3xl text-center mb-12">
