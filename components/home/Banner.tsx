@@ -31,7 +31,7 @@ const Banner = () => {
 
     return (
       <FadeSection>
-        <div
+        <section
         className="hero h-screen relative overflow-hidden">
         <div className="hero-overlay bg-opacity-30 z-[1]"></div>
         <HomeBannerVideo/>
@@ -43,12 +43,12 @@ const Banner = () => {
             </h2>
           </div>
         </div>
-        <Link to='problem' smooth duration={1000}>
+        <Link to='Crisis' smooth duration={1000}>
           <button className='absolute left-1/2 bottom-10 text-3xl z-[2]' ref={arrowBtn}> 
             <MdKeyboardDoubleArrowDown />
           </button>
         </Link>
-      </div>
+      </section>
       </FadeSection>
     );
 };

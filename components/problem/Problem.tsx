@@ -66,6 +66,7 @@ const Problem = () => {
       scrollTrigger: {
         trigger: section,
         start: "top top",
+        toggleActions: "play play reverse reverse"
       },
     });
     gsap.from(container, {
@@ -75,7 +76,8 @@ const Problem = () => {
       duration: 2.5,
       scrollTrigger: {
         trigger: section,
-        start: "3% top",
+        start: "top top",
+        toggleActions: "play play reverse reverse"
       },
     });
 
@@ -104,7 +106,7 @@ const Problem = () => {
   }, []);
 
   return (
-    <Route id="problem">
+    <Route id="Crisis">
       {/* <FadeSection> */}
       <section
         className="py-[15vh] overflow-hidden min-h-screen"

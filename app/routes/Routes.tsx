@@ -6,22 +6,22 @@ type RouteType = {
   name: string;
 };
 
-const routesArray: RouteType[] = [
+export const routesArray: RouteType[] = [
     {
-        name: "home",
+        name: "Home",
     },
     {
-        name: "problem"
+        name: "Crisis"
     },
   {
-    name: "about",
+    name: "About",
   },
 ];
 
 const Route = ({ id, children }: { id: string; children: ReactNode }) => {
   const route = routesArray.find((target) => target.name === id);
 
-  const routeName = route?.name || "home";
+  const routeName = route?.name || "Home";
 
   return (
     <Element name={routeName}>
