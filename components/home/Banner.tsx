@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { Link } from "react-scroll";
 import HomeBannerVideo from '@/components/home/HomeBannerVideo';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
+import FadeSection from '../shared/OpacityWrapper';
 
 
 gsap.registerPlugin(useGSAP);
@@ -29,6 +30,7 @@ const Banner = () => {
       }, []);
 
     return (
+      <FadeSection>
         <div
         className="hero h-screen relative overflow-hidden">
         <div className="hero-overlay bg-opacity-30 z-[1]"></div>
@@ -41,12 +43,13 @@ const Banner = () => {
             </h2>
           </div>
         </div>
-        <Link to='about'smooth duration={1000}>
+        <Link to='problem' smooth duration={1000}>
           <button className='absolute left-1/2 bottom-10 text-3xl z-[2]' ref={arrowBtn}> 
             <MdKeyboardDoubleArrowDown />
           </button>
         </Link>
       </div>
+      </FadeSection>
     );
 };
 
