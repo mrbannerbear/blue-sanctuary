@@ -14,6 +14,7 @@ gsap.registerPlugin(useGSAP);
 const Banner = () => {
 
     const heading = useRef<HTMLHeadingElement>(null);
+    const bannerImg = useRef<HTMLHeadingElement>(null);
     const subHeading = useRef<HTMLHeadingElement>(null);
     const arrowBtn = useRef<HTMLButtonElement>(null);
     useEffect(() => {
@@ -27,14 +28,22 @@ const Banner = () => {
           tl.from(heading.current, { delay: 2 })
           .from(subHeading.current, { delay: 2 }, 0)
           .from(arrowBtn.current, { delay: 3 }, 0)
+
+          gsap.from( ".homeBannerAsset",
+            {
+              scale: 1.2,
+              duration: 15
+            }
+          )
       }, []);
 
     return (
       <FadeSection>
         <section
-        className="hero h-screen relative overflow-hidden">
+        className="hero h-screen relative overflow-hidden"
+        >
         <div className="hero-overlay bg-opacity-30 z-[1]"></div>
-        <HomeBannerVideo/>
+        <HomeBannerVideo ref={bannerImg}/>
         <div className="hero-content text-center z-[2]">
           <div>
             <h1 className="mb-5 text-[2rem] lg:text-5xl font-bold" ref={heading}>Beneath the Blue</h1>
