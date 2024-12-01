@@ -7,6 +7,7 @@ import { Link } from "react-scroll";
 import HomeBannerVideo from '@/components/home/HomeBannerVideo';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 import FadeSection from '../shared/OpacityWrapper';
+import Route from '@/app/routes/Routes';
 
 
 gsap.registerPlugin(useGSAP);
@@ -39,6 +40,7 @@ const Banner = () => {
 
     return (
       <FadeSection>
+        <Route id='Home'>
         <section
         className="hero h-screen relative overflow-hidden"
         >
@@ -58,6 +60,7 @@ const Banner = () => {
           </button>
         </Link>
       </section>
+      </Route>
       </FadeSection>
     );
 };

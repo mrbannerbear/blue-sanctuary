@@ -6,7 +6,7 @@ import Navbar from "@/components/shared/Navbar";
 
 export default function Home() {
   return (
-  <main>
+  <main className="bg-blue-950/20">
       <Navbar/>
       <Banner/>
       <Problem/>
