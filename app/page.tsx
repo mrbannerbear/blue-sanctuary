@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about/AboutSection";
+import GetInvolved from "@/components/getInvolved/GetInvolved";
 import Banner from "@/components/home/Banner";
 import Problem from "@/components/problem/Problem";
 import Footer from "@/components/shared/Footer";
@@ -11,6 +12,7 @@ export default function Home() {
       <Banner/>
       <Problem/>
       <AboutSection/>
+      <GetInvolved/>
       <Footer/>
   </main>
   );

@@ -54,17 +54,17 @@ const AboutUs: React.FC = () => {
     <Route id="About">
         <section
         ref={sectionRef}
-        className="aboutSection relative text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-16 gap-12"
+        className="aboutSection relative text-white flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-16 gap-12"
         >
             <div
-            className="w-[400px] h-[400px] left-0 bg-fixed bg-contain bg-center"
+            className="w-[20vw] h-[400px] left-0 bg-fixed bg-cover bg-center bg-no-repeat"
             style={{
                 backgroundImage: `url(https://images.unsplash.com/photo-1584267828520-5e0d3fc22287?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`
             }}
             >
             </div>
             <div className="max-w-3xl space-y-6">
-                <h2 className="aboutHeading text-3xl font-bold"
+                <h2 className="aboutHeading text-3xl "
                 //  ref={headingRef}
                 >
                 About Us

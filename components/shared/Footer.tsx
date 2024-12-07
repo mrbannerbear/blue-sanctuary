@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center backdrop-blur-md text-base-content rounded p-10 border-t-2 border-t-white/50">
+    <footer className="footer footer-center backdrop-blur-md text-base-content rounded p-10 border-t-2 bg-blue-950/40">
   <nav className="grid grid-flow-col gap-4">
   {
               routesArray.map(

@@ -48,7 +48,7 @@ const Banner = () => {
         <HomeBannerVideo ref={bannerImg}/>
         <div className="hero-content text-center z-[2]">
           <div>
-            <h1 className="mb-5 text-[2rem] lg:text-5xl font-bold" ref={heading}>Beneath the Blue</h1>
+            <h1 className="mb-5 text-[2rem] lg:text-5xl " ref={heading}>Beneath the Blue</h1>
             <h2 className="mb-5 font-sans lg:text-[1.5rem]" ref={subHeading}>
                 Every life in the ocean is a story worth saving. Be part of the change.
             </h2>
