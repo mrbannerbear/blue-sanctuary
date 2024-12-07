@@ -109,7 +109,7 @@ const Problem = () => {
     <Route id="Crisis">
       {/* <FadeSection> */}
       <section
-        className="pt-[17vh] pb-[10vh] overflow-hidden min-h-screen"
+        className="pt-[17vh] pb-[10vh] overflow-hidden"
         ref={sectionRef}
       >
         <h2 className="problemHeading text-3xl text-center mb-12">
@@ -134,7 +134,7 @@ const Problem = () => {
                 />
               </div>
               <div className="slide-text pl-4 flex flex-col justify-center w-1/2">
-                <h3 className="text-2xl font-bold mb-4">{problem.title}</h3>
+                <h3 className="text-2xl  mb-4">{problem.title}</h3>
                 <p className="text-md text-gray-400 font-sans">{problem.text}</p>
               </div>
             </div>
