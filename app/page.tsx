@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about/AboutSection";
+import PopulationSlider from "@/components/endangered/Endangered";
 import GetInvolved from "@/components/getInvolved/GetInvolved";
 import Banner from "@/components/home/Banner";
 import Problem from "@/components/problem/Problem";
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar/>
       <Banner/>
       <Problem/>
+      <PopulationSlider/>
       <AboutSection/>
       <GetInvolved/>
       <Footer/>
