@@ -1,5 +1,5 @@
 "use client"
-import { ReactLenis } from "@studio-freight/react-lenis";
+import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 
 function LenisComponent({ children }: { children: React.ReactNode }) {
   const lenisOptions = {
@@ -8,11 +8,15 @@ function LenisComponent({ children }: { children: React.ReactNode }) {
     smooth: true,      // Smooth scroll for desktop (obviously)
   };
 
+  const lenis = useLenis(({ scroll }) => {
+    
+  })
+
   return (
     <ReactLenis root options={lenisOptions}>
-      {children}
+        { children }
     </ReactLenis>
-  );
+  )
 }
 
 export default LenisComponent;

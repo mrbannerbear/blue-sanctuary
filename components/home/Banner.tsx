@@ -7,6 +7,7 @@ import { Link } from "react-scroll";
 import HomeBannerVideo from '@/components/home/HomeBannerVideo';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 import FadeSection from '../shared/OpacityWrapper';
+import Route from '@/app/routes/Routes';
 
 
 gsap.registerPlugin(useGSAP);
@@ -14,6 +15,7 @@ gsap.registerPlugin(useGSAP);
 const Banner = () => {
 
     const heading = useRef<HTMLHeadingElement>(null);
+    const bannerImg = useRef<HTMLHeadingElement>(null);
     const subHeading = useRef<HTMLHeadingElement>(null);
     const arrowBtn = useRef<HTMLButtonElement>(null);
     useEffect(() => {
@@ -27,17 +29,26 @@ const Banner = () => {
           tl.from(heading.current, { delay: 2 })
           .from(subHeading.current, { delay: 2 }, 0)
           .from(arrowBtn.current, { delay: 3 }, 0)
+
+          gsap.from( ".homeBannerAsset",
+            {
+              scale: 1.2,
+              duration: 15
+            }
+          )
       }, []);
 
     return (
       <FadeSection>
+        <Route id='Home'>
         <section
-        className="hero h-screen relative overflow-hidden">
+        className="hero h-screen relative overflow-hidden"
+        >
         <div className="hero-overlay bg-opacity-30 z-[1]"></div>
-        <HomeBannerVideo/>
+        <HomeBannerVideo ref={bannerImg}/>
         <div className="hero-content text-center z-[2]">
           <div>
-            <h1 className="mb-5 text-[2rem] lg:text-5xl font-bold" ref={heading}>Beneath the Blue</h1>
+            <h1 className="mb-5 text-[2rem] lg:text-5xl " ref={heading}>Beneath the Blue</h1>
             <h2 className="mb-5 font-sans lg:text-[1.5rem]" ref={subHeading}>
                 Every life in the ocean is a story worth saving. Be part of the change.
             </h2>
@@ -49,6 +60,7 @@ const Banner = () => {
           </button>
         </Link>
       </section>
+      </Route>
       </FadeSection>
     );
 };

@@ -16,6 +16,9 @@ export const routesArray: RouteType[] = [
   {
     name: "About",
   },
+  {
+    name: "Get Involved"
+  }
 ];
 
 const Route = ({ id, children }: { id: string; children: ReactNode }) => {
