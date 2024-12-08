@@ -38,7 +38,7 @@ const AboutUs: React.FC = () => {
               ease: "power2.out",
               scrollTrigger: {
                 trigger: paragraph,
-                start: "top 80%",
+                start: "top 90%",
                 toggleActions: "play none none reverse",
               },
             }
@@ -57,13 +57,13 @@ const AboutUs: React.FC = () => {
         className="aboutSection relative text-white flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-16 gap-12"
         >
             <div
-            className="w-[20vw] h-[400px] left-0 bg-fixed bg-cover bg-center bg-no-repeat"
+            className="lg:w-[450px] h-[400px] left-0 bg-fixed  bg-no-repeat bg-contain bg-left"
             style={{
-                backgroundImage: `url(https://images.unsplash.com/photo-1584267828520-5e0d3fc22287?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`
+                backgroundImage: `url(https://images.unsplash.com/photo-1561623497-3ab314e8f8a9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`
             }}
             >
             </div>
-            <div className="max-w-3xl space-y-6">
+            <div className="max-w-xl space-y-6">
                 <h2 className="aboutHeading text-3xl "
                 //  ref={headingRef}
                 >
